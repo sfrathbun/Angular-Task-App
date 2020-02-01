@@ -1,0 +1,17 @@
+<div id="tasks">
+  <h2>Upcoming Tasks </h2>
+  <hr/>
+
+    <!-- this is looping through the task array to display them to the app.component.html page -->
+    <p class="homeTasks" *ngFor="let tasks of tasks"><a [routerLink]="['/details', tasks.id]">{{ tasks.name }}</a><br/>
+
+      <!-- the routerLink is routing us to the edit page based on the task id -->
+      <br/>
+      <button class="btn" (click)="onClickDelete(tasks.id)" >Delete Task</button>
+
+    </p>
+    <br/>
+    <hr/>
+    <a [routerLink]="['/list']" routerLinkActive="active"><button class="btn">All Tasks with Details</button></a>
+    <a [routerLink]="['/add']" routerLinkActive="active"><button class="btn">Add a new task</button></a>
+  </div>

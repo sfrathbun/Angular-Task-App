@@ -1,0 +1,16 @@
+<div id="tasks">
+  <h1>Tasks Details</h1>
+  <hr />
+  <p>
+    <span id="taskDetails"> Task Name: </span>{{ myTask.name }}
+    <br />
+    <span id="taskDetails"> Description: </span>{{ myTask.description }}
+    <br />
+    <span id="taskDetails"> Needed to complete: </span>{{ myTask.needs }}
+    <br />
+    <span id="taskDetails"> Due date: </span>{{ myTask.dueDate }}
+    <br />
+  </p>
+  <a [routerLink]="['/edit', myTask.id]"><button class="btn">Edit</button></a>
+  <button class="btn" (click)="onClickDelete(myTask.id)">Delete Task</button>
+</div>

@@ -1,0 +1,22 @@
+<div id="tasks">
+<h2>Edit Task</h2>
+<hr/>
+<!-- here we are using editTask instead of addTask -->
+<!-- this calls the editTask function in my .ts file -->
+<label id="taskDetails" for="taskName">Task name:</label>
+<input [(ngModel)]= "editTask.name" ><br />
+
+<label id="taskDetails" for="taskDescription">Description:</label>
+<textarea [(ngModel)]= "editTask.description" ></textarea><br />
+
+<label id="taskDetails" for="taskNeeds">needs:</label>
+<textarea [(ngModel)]= "editTask.needs" ></textarea><br />
+
+<label id="taskDetails" for="taskDue">Due Date:</label>
+<input [(ngModel)]= "editTask.dueDate" ><br />
+
+<button class="btn" (click)="saveTask()" >Save Changes</button>
+<button class="btn" (click)="onClickDelete(editTask.id)" >Delete Task</button>
+
+</div>
+

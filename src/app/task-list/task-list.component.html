@@ -1,0 +1,23 @@
+<div id="tasks">
+  <h2> Detailed Tasks View </h2>
+  <hr/>
+    <!-- this is looping through the task array to display them to the app.component.html page -->
+    <p *ngFor="let tasks of tasks">
+      <span id="taskDetails" class="space" > <a [routerLink]="['/details', tasks.id]">Task name</a></span>: {{ tasks.name }}<br/>
+      <span id="taskDetails" >Description:</span> {{ tasks.description }} <br/>
+      <span id="taskDetails" >Needed to complete:</span> {{ tasks.needs }} <br/>
+      <span id="taskDetails" >Due date:</span> {{ tasks.dueDate }} <br/>
+
+      <!-- the routerLink is routing us to the edit page based on the task id -->
+      <br/>
+      <a [routerLink]="['/edit', tasks.id]"><button class="btn" >Edit Task</button> </a>
+      <br/>
+      <button class="btn" (click)="onClickDelete(tasks.id)" >Delete Task</button>
+
+      <!-- the deleteTask is just calling a method based on the id -->
+    </p>
+    <br/>
+    <hr/>
+      <a [routerLink]="['/home']" routerLinkActive="active"><button class="btn">Back to Quick View</button></a>
+      <a [routerLink]="['/add']" routerLinkActive="active"><button class="btn">Add a new task</button></a>
+  </div>

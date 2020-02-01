@@ -1,0 +1,31 @@
+
+  <form>
+  <div id="tasks">
+    <h2>Hi there! Add a task</h2>
+    <hr/>
+
+  <div>
+    <label id="taskDetails" for="taskName">Task name:</label>
+    <input type="text" placeholder="Give your task a name" name="name" required [(ngModel)]="newTask.name">
+  </div>
+
+  <div>
+    <label id="taskDetails" for="taskName">Description:</label>
+    <textarea type="text" placeholder="Describe your task" name="description" required [(ngModel)]="newTask.description" ></textarea>
+  </div>
+
+  <div>
+    <label id="taskDetails" for="taskName">Needed to complete task:</label>
+    <input type="text" placeholder="What do you need to complete this task?" name="needs" required [(ngModel)]="newTask.needs" >
+  </div>
+
+  <div>
+    <label id="taskDetails" for="taskName">Due Date:</label>
+    <input type="text" placeholder="mm/dd/yyyy" name="dueDate" required [(ngModel)]="newTask.dueDate" >
+  </div>
+
+    <button class="btn" (click)="addTask()" >Add Task</button>
+  </div>
+</form>
+
+
