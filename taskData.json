@@ -13,34 +13,6 @@
       "needs": "Have resume review my Sarah Bahn",
       "dueDate": "02/03/2020",
       "id": 4
-    },
-    {
-      "name": "Start gathering paperwork for taxes",
-      "description": "Get together all receipts and schedule appointment",
-      "needs": "set time aside to get things done",
-      "dueDate": "02/28/2020",
-      "id": 5
-    },
-    {
-      "name": "Make reservation at Midwood Smokehouse for my birthday",
-      "description": "For Sean's birthday<3",
-      "needs": "To be satisfied by good ol' smoked brisket",
-      "dueDate": "02/02/2020",
-      "id": 7
-    },
-    {
-      "name": "Learn more Angular because it's awesome",
-      "description": "Hopefully, get a job where I can use AngularJS",
-      "needs": "Time set aside to learn",
-      "dueDate": "04/17/2020",
-      "id": 8
-    },
-    {
-      "name": "Get a job by April 17th",
-      "description": "Need to get a job ASAP",
-      "needs": "The Lord",
-      "dueDate": "04/17/2020",
-      "id": 9
     }
   ]
 }

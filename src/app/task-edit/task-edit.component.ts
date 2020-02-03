@@ -21,11 +21,11 @@ export class TaskEditComponent implements OnInit {
   };
 
   onClickDelete(id: number): void {
-    // confirm ('Are you sure you want to delete this task?');
-    // I need to put an if statement here
+    if (confirm ('Are you sure you want to delete this task?')) {
     this.taskDataService
     .deleteTask(id)
     .subscribe(t => this.router.navigate(["home"]));
+    }
   };
 
   constructor(

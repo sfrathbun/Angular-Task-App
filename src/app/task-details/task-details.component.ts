@@ -13,10 +13,11 @@ export class TaskDetailsComponent implements OnInit {
   id: number;
 
   onClickDelete(id: number): void {
+    if (confirm ('Are you sure you want to delete this task?')) {
     this.taskData
     .deleteTask(id)
     .subscribe(t => this.router.navigate(["home"]));
-  };
+    }};
 
   constructor(
     private taskData : TaskDataService,
