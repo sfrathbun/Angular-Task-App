@@ -4,7 +4,7 @@
       "name": "Work on friends construction website",
       "description": "start building the home page. Get a few sliders. Ask him to write \"About me\" content. Get photos of his work",
       "needs": "Get Avada theme and install ",
-      "dueDate": "03/01/2020",
+      "dueDate": "2020-02-08",
       "id": 3
     },
     {
@@ -13,6 +13,13 @@
       "needs": "Have resume review my Sarah Bahn",
       "dueDate": "02/03/2020",
       "id": 4
+    },
+    {
+      "name": "New Task",
+      "description": "Testing using a type=\"date\"",
+      "needs": "nothing, just testing",
+      "dueDate": "2020-02-08",
+      "id": 5
     }
   ]
 }

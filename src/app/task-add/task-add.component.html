@@ -21,7 +21,7 @@
 
   <div>
     <label id="taskDetails" for="taskName">Due Date:</label>
-    <input type="text" placeholder="mm/dd/yyyy" name="dueDate" required [(ngModel)]="newTask.dueDate" >
+    <input type="date" name="date" placeholder="mm/dd/yyyy" name="dueDate" required [(ngModel)]="newTask.dueDate" >
   </div>
 
     <button class="btn" (click)="addTask()" >Add Task</button>

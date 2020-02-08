@@ -13,7 +13,7 @@
 <textarea [(ngModel)]= "editTask.needs" ></textarea><br />
 
 <label id="taskDetails" for="taskDue">Due Date:</label>
-<input [(ngModel)]= "editTask.dueDate" ><br />
+<input type="date" name="date" [(ngModel)]= "editTask.dueDate" ><br />
 
 <button class="btn" (click)="saveTask()" >Save Changes</button>
 <button class="btn" (click)="onClickDelete(editTask.id)" >Delete Task</button>
